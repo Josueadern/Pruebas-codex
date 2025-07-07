@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekly Tracker</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    label, input, button { margin-top: 10px; display: block; }
+    .error { color: red; }
+  </style>
+</head>
+<body>
+  <h1>Weekly Tracker</h1>
+  <div>
+    <p>Points: <span id="points">0</span></p>
+    <p>Completed Tasks: <span id="tasks">0</span></p>
+  </div>
+  <div>
+    <label for="pin">PIN to reset:</label>
+    <input type="password" id="pin"/>
+    <button id="manual-reset">Manual Reset</button>
+    <p id="message" class="error"></p>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
